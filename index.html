@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The King of Bollywood | MODAL</title>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="btn show-btn" id="show-btn">Show Modal</button>
+      <!-- MODAL -->
+      <div class="modal hidden" id="modal">
+        <div class="modal-header">
+          <h3>I love Shah Rukh Khan's all movies 💖</h3>
+          <button class="btn close-btn" id="close-btn">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <section class="services">
+            <div class="container servicescontainer">
+              <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img
+                    src="/img/baazigar.jpeg"
+                    alt="Baazigar"
+                    class="slide-img" 
+                  />
+                  div.
+                </div>
+                <div class="mySlides fade">
+                  <img
+                    src="/img/chinnayexpress.jpeg"
+                    alt="Chennai Express"
+                    class="slide-img"
+                  />
+                </div>
+                <div class="mySlides fade">
+                  <img
+                    src="/img/happy-birthday-srk-0001.jpg"
+                    alt="Happy Birthday"
+                    class="slide-img"
+                  />
+                </div>
+                <div class="mySlides fade">
+                  <img
+                    src="/img/movie-of-srk.jpg"
+                    alt="Movies of SRK"
+                    class="slide-img"
+                  />
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- OVERLAY -->
+    <div class="overlay hidden" id="overlay"></div>
+    <!-- JS -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>

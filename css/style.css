@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela", sans-serif;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/img/happy-birthday-srk-0001.jpg") center/cover no-repeat;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.show-btn {
+  background-color: #474b4f;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+
+.show-btn:hover {
+  background-color: #3a3d40;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 100;
+  align-items: center;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  color: #222;
+  font-size: 20px;
+}
+
+/* overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slide-img {
+  width: 100%;
+  border-radius: 7px;
+  width: 755px;
+  height: 800px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
